@@ -1,16 +1,16 @@
-package cryptoAnalyzer;
+package cryptoanalyzer;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static cryptoAnalyzer.UniversalCipherMethod.universalCipherMethod;
+import static cryptoanalyzer.MenuPhrases.*;
+import static cryptoanalyzer.UniversalCipherMethod.universalCipherMethod;
 
 public class FileDecipher {
 
-    public FileDecipher() throws FileNotFoundException {
+    public static void fileDecipher(int offset) {
 
         Scanner sc = new Scanner(System.in);
         String filePath = sc.nextLine();
@@ -18,11 +18,11 @@ public class FileDecipher {
         try (FileReader reader = new FileReader(filePath);
              FileWriter writer = new FileWriter(filePath + "copy")) {
 
-            char[] buffer = new char[210000000];
+            char[] buffer = new char[filePath.length()];
             while (reader.ready()) {
                 int result = reader.read(buffer);
                 for (int i = 0; i < buffer.length; i++) {
-                    writer.write(universalCipherMethod(buffer[i], 31));
+                    writer.write(universalCipherMethod(buffer[i], ALPHABET.length()-offset));
                 }
             }
         } catch (IOException e) {
