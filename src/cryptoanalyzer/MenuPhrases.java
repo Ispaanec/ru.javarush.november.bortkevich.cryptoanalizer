@@ -1,7 +1,7 @@
 package cryptoanalyzer;
 
 public class MenuPhrases {
-    public static final String ALPHABET = "ΰαβγδεΈζηθικλμνξοπρςστυχφψωϊϋόύώÿ.,:-!?\" ";
+    public static final String ALPHABET = "Π°Π±Π²Π³Π΄ΠµΡ‘Π¶Π·ΠΈΠΉΠΊΠ»ΠΌΠ½ΠΎΠΏΡ€ΡΡ‚ΡƒΡ„Ρ…Ρ‡Ρ†ΡΡ‰ΡΡ‹ΡΡΡΡ.,:-!?\" ";
 
     public static final int OFFSET_NUMBER = 3;
 

@@ -25,7 +25,7 @@ public class Runner {
                 if (sc.nextInt() == 5) {
                     System.out.print("Enter your text for cipher: \n");
                     consoleCipher(OFFSET_NUMBER);
-                } else if (sc.nextInt() == 6) {
+                }  else if (sc.nextInt() == 6) {
                     System.out.print("Enter the path to File.txt: \n");
                     fileCipher(OFFSET_NUMBER);
                     System.out.println(CHECK);
