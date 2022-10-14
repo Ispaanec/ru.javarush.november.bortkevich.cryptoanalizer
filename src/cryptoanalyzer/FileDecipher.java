@@ -10,7 +10,7 @@ import static cryptoanalyzer.UniversalCipherMethod.universalCipherMethod;
 
 public class FileDecipher {
 
-    public static void fileDecipher(int offset) {
+    public static void fileDecipher() {
 
         Scanner sc = new Scanner(System.in);
         String filePath = sc.nextLine();
@@ -21,8 +21,8 @@ public class FileDecipher {
             char[] buffer = new char[filePath.length()];
             while (reader.ready()) {
                 int result = reader.read(buffer);
-                for (int i = 0; i < buffer.length; i++) {
-                    writer.write(universalCipherMethod(buffer[i], ALPHABET.length()-offset));
+                for (int i = 0; i < result; i++) {
+                    writer.write(universalCipherMethod(buffer[i], ALPHABET.length()-OFFSET_NUMBER));
                 }
             }
         } catch (IOException e) {

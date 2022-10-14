@@ -14,7 +14,7 @@ public class BruteForce {
         String filePath = sc.nextLine();
 
         try (FileReader reader = new FileReader(filePath)) {
-            char[] buffer = new char[filePath.length()+128];
+            char[] buffer = new char[filePath.length()];
             while (reader.ready()) {
                 int result = reader.read(buffer);
                 for (int j = 0; j <= ALPHABET.length(); j++) {

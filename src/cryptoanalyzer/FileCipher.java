@@ -5,11 +5,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static cryptoanalyzer.MenuPhrases.OFFSET_NUMBER;
 import static cryptoanalyzer.UniversalCipherMethod.universalCipherMethod;
 
 public class FileCipher {
 
-    public static void fileCipher(int offset) {
+    public static void fileCipher() {
 
         Scanner sc = new Scanner(System.in);
         String filePath = sc.nextLine();
@@ -20,8 +21,8 @@ public class FileCipher {
             char[] buffer = new char[filePath.length()];
             while (reader.ready()) {
                 int result = reader.read(buffer);
-                for (int i = 0; i < buffer.length; i++) {
-                    writer.write(universalCipherMethod(buffer[i], offset));
+                for (int i = 0; i < result; i++) {
+                    writer.write(universalCipherMethod(buffer[i], OFFSET_NUMBER));
                 }
             }
         } catch (IOException e) {
