@@ -1,4 +1,4 @@
-package cryptoanalyzer;
+package navigation;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ import static cryptoanalyzer.ConsoleCipher.consoleCipher;
 import static cryptoanalyzer.ConsoleDecipher.consoleDecipher;
 import static cryptoanalyzer.FileCipher.fileCipher;
 import static cryptoanalyzer.FileDecipher.fileDecipher;
-import static cryptoanalyzer.MenuPhrases.*;
+import static navigation.MenuPhrases.*;
 
 public class Menu {
     private final Scanner sc = new Scanner(System.in);

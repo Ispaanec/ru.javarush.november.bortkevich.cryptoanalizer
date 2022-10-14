@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static cryptoanalyzer.MenuPhrases.*;
+import static navigation.MenuPhrases.*;
 import static cryptoanalyzer.UniversalCipherMethod.universalCipherMethod;
 
 public class BruteForce {

@@ -1,4 +1,4 @@
-package cryptoanalyzer;
+package navigation;
 
 public class MenuPhrases {
     public static final String ALPHABET = "абвгдеёжзийклмнопрстуфхчцшщъыьэюя.,:-!?\" ";

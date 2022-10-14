@@ -1,7 +1,7 @@
 package cryptoanalyzer;
 
 import java.io.IOException;
-import static cryptoanalyzer.MenuPhrases.*;
+import static navigation.MenuPhrases.*;
 
 
 public class UniversalCipherMethod {

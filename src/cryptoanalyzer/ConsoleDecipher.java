@@ -3,8 +3,8 @@ package cryptoanalyzer;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static cryptoanalyzer.MenuPhrases.ALPHABET;
-import static cryptoanalyzer.MenuPhrases.OFFSET_NUMBER;
+import static navigation.MenuPhrases.ALPHABET;
+import static navigation.MenuPhrases.OFFSET_NUMBER;
 import static cryptoanalyzer.UniversalCipherMethod.universalCipherMethod;
 
 public class ConsoleDecipher {

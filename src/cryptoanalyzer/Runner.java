@@ -1,5 +1,7 @@
 package cryptoanalyzer;
 
+import navigation.Menu;
+
 import java.io.IOException;
 
 public class Runner {
